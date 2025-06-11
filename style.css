@@ -159,33 +159,33 @@ header{
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 20px;
+        text-align: center;
     }
 
     .navigation {
-        margin-left: 0;
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
         margin-top: 10px;
     }
 
     .navigation a {
-        margin-right: 0;
         font-size: 1em;
     }
 
     .home {
         flex-direction: column;
+        align-items: center;
         padding: 20px;
         text-align: center;
     }
 
     .content {
-        max-width: 100%;
+        width: 100%;
     }
 
     .content h2 {
@@ -197,15 +197,23 @@ header{
     }
 
     .portfolio-image {
-        width: 250px;
-        height: 250px;
-        margin-top: 20px;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .portfolio-image img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     .btn-group {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        width: 100%;
     }
 
     .btn-group a {
@@ -217,9 +225,11 @@ header{
         margin-top: 20px;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .social-icons a {
-        margin: 0 10px;
+        margin: 5px 10px;
     }
 }
+
